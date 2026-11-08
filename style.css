@@ -1213,6 +1213,14 @@ html.no-webgl .borjgali {
     border-top: 1px solid var(--line);
 }
 
+.contact-options {
+    scroll-margin-top: 110px;
+}
+
+.contact-options:focus {
+    outline: none;
+}
+
 .contact-title {
     margin-bottom: 30px;
     font-family: var(--display);
@@ -1255,25 +1263,29 @@ html.no-webgl .borjgali {
 .contact-links a {
     display: inline-flex;
     align-items: center;
-    min-height: 44px;
-    padding: 10px 16px;
-    border: 1px solid var(--rose-deep);
+    justify-content: center;
+    min-width: 150px;
+    min-height: 50px;
+    padding: 12px 20px;
+    border: 1px solid #854c59;
     border-radius: 2px;
-    background: rgb(255 251 250 / 82%);
-    color: var(--ink);
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    transition: color 200ms ease, border-color 200ms ease, background 200ms ease;
+    background: #854c59;
+    color: #fff;
+    font: 600 14px var(--sans);
+    letter-spacing: 0.04em;
+    text-transform: none;
+    transition: color 200ms ease, border-color 200ms ease, background 200ms ease, transform 200ms ease;
 }
 
 .contact-links a:focus-visible {
-    outline-color: var(--rose-deep);
+    outline: 3px solid var(--ink);
+    outline-offset: 3px;
 }
 
 .contact-links a:hover {
-    border-color: var(--rose-deep);
-    background: var(--rose-deep);
+    transform: translateY(-2px);
+    border-color: #613641;
+    background: #613641;
     color: #fff;
 }
 
