@@ -604,6 +604,7 @@ if (document.querySelector("[data-view]")) {
         const imagePath = selectedImage.getAttribute("src") || selectedImage.src;
         const originalPath = imagePath
             .replace(/^assets\/optimized\//, "assets/")
+            .replace(/\/cuts\/(?:half|half two)\//, "/cuts/")
             .replace(/\.webp$/i, "");
         if (originalPath === imagePath) {
             return;

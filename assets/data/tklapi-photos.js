@@ -1,6 +1,6 @@
 window.TKLAPI_PHOTOS = {
     "technical-drawing": {
-        src: "assets/optimized/works/cuts/tklapi-lamp-1-2.jpg",
+        src: "assets/optimized/works/cuts/half/tklapi-lamp-1-2.jpg",
         w: 965,
         h: 768,
         alt: "Technical drawings of the Tklapi Lamp, showing its circular frame, shade structure, measurements and construction notes."

@@ -14,15 +14,15 @@ window.FUTURE_TRACES_PHOTOS = {
         alt: "Clay research notes and a small study sketch."
     },
     "first-firing": {
-        src: "assets/optimized/works/cuts/future-traces-3-5.webp",
+        src: "assets/optimized/works/cuts/half/future-traces-3-5.webp",
         alt: "The icon after its first firing, before the finished glaze."
     },
     "second-firing": {
-        src: "assets/optimized/works/cuts/future-traces-3-6.webp",
+        src: "assets/optimized/works/cuts/half/future-traces-3-6.webp",
         alt: "The icon after a later firing, with its blue and gold glaze."
     },
     "third-firing": {
-        src: "assets/optimized/works/cuts/future-traces-3-7.webp",
+        src: "assets/optimized/works/cuts/half/future-traces-3-7.webp",
         alt: "The icon after its third firing, showing the developed glaze and crack."
     },
     "crack-detail": {

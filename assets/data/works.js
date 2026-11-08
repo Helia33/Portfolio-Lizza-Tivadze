@@ -16,42 +16,42 @@ window.WORKS = {
                                           ],
                                 "cuts":  [
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-1-1.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-1-1.webp",
                                                  "w":  1800,
                                                  "h":  819,
                                                  "desc":  "Wide detail of the stitched collage map: wardrobe drawing with pinned family photos, curved text paths and thread marks.",
                                                  "size":  "large"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-1-2.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-1-2.webp",
                                                  "w":  1037,
                                                  "h":  435,
                                                  "desc":  "Photo of grandmother\u0027s house among trees, stitched over with red thread on a canvas mount (cropped by board edge).",
                                                  "size":  "medium"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-1-3.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-1-3.webp",
                                                  "w":  486,
                                                  "h":  484,
                                                  "desc":  "Photo of a hand sorting a pile of buttons on floral fabric, mounted on canvas.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-1-4.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-1-4.webp",
                                                  "w":  266,
                                                  "h":  354,
                                                  "desc":  "Vintage portrait photo of a woman (grandma Valjia) pinned to the wardrobe drawing.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-1-5.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-1-5.webp",
                                                  "w":  400,
                                                  "h":  405,
                                                  "desc":  "Photo of sliced churchkhela/dried fruit rounds with walnuts on blue background.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-1-6.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-1-6.webp",
                                                  "w":  400,
                                                  "h":  405,
                                                  "desc":  "Photo of a dark wooden wardrobe door stitched with red thread, on canvas mount.",
@@ -69,49 +69,49 @@ window.WORKS = {
                                           ],
                                 "cuts":  [
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-2-1.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-2-1.webp",
                                                  "w":  1800,
                                                  "h":  1286,
                                                  "desc":  "The complete stitched memory map: photos, drawings, food samples and handwritten Georgian words joined by a looping text path.",
                                                  "size":  "large"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-2-2.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-2-2.webp",
                                                  "w":  590,
                                                  "h":  494,
                                                  "desc":  "Snowy winter scene of the family house overlaid with a red pencil house drawing and small photos.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-2-3.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-2-3.webp",
                                                  "w":  670,
                                                  "h":  445,
                                                  "desc":  "Grey-toned grandmother\u0027s house collage with family photos, beans and Georgian handwriting.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-2-4.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-2-4.webp",
                                                  "w":  698,
                                                  "h":  603,
                                                  "desc":  "Marani (wine cellar) house photo collage with red outline drawing and qvevri clay pots.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-2-5.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-2-5.webp",
                                                  "w":  385,
                                                  "h":  397,
                                                  "desc":  "Black-and-white 1960 photo of three women in the snow, stitched in red.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-2-6.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-2-6.webp",
                                                  "w":  396,
                                                  "h":  422,
                                                  "desc":  "1981 black-and-white family portrait with red stitched marks.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-2-7.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-2-7.webp",
                                                  "w":  400,
                                                  "h":  387,
                                                  "desc":  "2024 photo of a raised wooden garden hut (Nalia) on canvas.",
@@ -131,105 +131,105 @@ window.WORKS = {
                                           ],
                                 "cuts":  [
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-1.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-1.webp",
                                                  "w":  576,
                                                  "h":  583,
                                                  "desc":  "Pictures: colour-tinted family portrait of three people, stitched in red.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-2.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-2.webp",
                                                  "w":  576,
                                                  "h":  568,
                                                  "desc":  "Objects: drawing of a sickle on textured paper.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-3.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-3.webp",
                                                  "w":  576,
                                                  "h":  580,
                                                  "desc":  "Food: pile of speckled borlotti beans on paper.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-4.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-4.webp",
                                                  "w":  565,
                                                  "h":  578,
                                                  "desc":  "Spaces: sepia pencil-and-wash drawing of a pantry room with shelves.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-5.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-5.webp",
                                                  "w":  605,
                                                  "h":  585,
                                                  "desc":  "Words: Georgian handwriting embroidered/drawn in brown on paper.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-6.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-6.webp",
                                                  "w":  436,
                                                  "h":  430,
                                                  "desc":  "Pictures: black-and-white family photo with children, red stitch marks.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-7.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-7.webp",
                                                  "w":  439,
                                                  "h":  425,
                                                  "desc":  "Objects: drawing of a glass jar filled with walnuts/beans.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-8.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-8.webp",
                                                  "w":  396,
                                                  "h":  435,
                                                  "desc":  "Food: heap of wheat grains on paper.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-9.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-9.webp",
                                                  "w":  439,
                                                  "h":  435,
                                                  "desc":  "Spaces: wash drawing of a raised hut between trees.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-10.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-10.webp",
                                                  "w":  439,
                                                  "h":  430,
                                                  "desc":  "Words: Georgian words written in brown ink.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-11.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-11.webp",
                                                  "w":  324,
                                                  "h":  323,
                                                  "desc":  "Pictures: photo of hands kneading dough in a bowl (khachapuri), stitched in red.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-12.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-12.webp",
                                                  "w":  310,
                                                  "h":  316,
                                                  "desc":  "Objects: drawing of a two-door wardrobe.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-13.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-13.webp",
                                                  "w":  320,
                                                  "h":  323,
                                                  "desc":  "Food: three walnuts on paper.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-14.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-14.webp",
                                                  "w":  317,
                                                  "h":  316,
                                                  "desc":  "Spaces: drawing of a walnut tree beside a cornfield.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-3-15.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-3-15.webp",
                                                  "w":  342,
                                                  "h":  323,
                                                  "desc":  "Words: a single Georgian word drawn in brown.",
@@ -249,28 +249,28 @@ window.WORKS = {
                                           ],
                                 "cuts":  [
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-4-1.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-4-1.webp",
                                                  "w":  1433,
                                                  "h":  641,
                                                  "desc":  "Grid of collected fragments (photos, drawings, food) laid out on a wooden floor.",
                                                  "size":  "large"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-4-2.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-4-2.webp",
                                                  "w":  979,
                                                  "h":  791,
                                                  "desc":  "Loose arrangement of the archive fragments on a wooden floor during classification.",
                                                  "size":  "medium"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-4-3.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-4-3.webp",
                                                  "w":  1246,
                                                  "h":  797,
                                                  "desc":  "Hand-drawn categorization matrix of names, objects and places with coloured thread marks.",
                                                  "size":  "medium"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-4-4.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-4-4.webp",
                                                  "w":  490,
                                                  "h":  420,
                                                  "desc":  "Graphic of black squares spiralling around a centre, representing cyclical time.",
@@ -289,28 +289,28 @@ window.WORKS = {
                                           ],
                                 "cuts":  [
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-5-1.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-5-1.webp",
                                                  "w":  1800,
                                                  "h":  1368,
                                                  "desc":  "Close-up of the map around Marani II: stitched family photos, red shelf drawing, hammer drawing, text path and thread legend.",
                                                  "size":  "large"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-5-2.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-5-2.webp",
                                                  "w":  1404,
                                                  "h":  1107,
                                                  "desc":  "Pencil drawing of the cellar with red shelves of jars, jar and hammer drawings pinned on top.",
                                                  "size":  "large"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-5-3.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-5-3.webp",
                                                  "w":  601,
                                                  "h":  573,
                                                  "desc":  "1999 colour-tinted family portrait stitched with red thread.",
                                                  "size":  "small"
                                              },
                                              {
-                                                 "src":  "assets/optimized/works/cuts/closet-memories-5-4.webp",
+                                                 "src":  "assets/optimized/works/cuts/half two/closet-memories-5-4.webp",
                                                  "w":  572,
                                                  "h":  394,
                                                  "desc":  "Family snapshot of grandparents with children at a desk.",
@@ -331,14 +331,14 @@ window.WORKS = {
                                       ],
                             "cuts":  [
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-1-1.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-1-1.webp",
                                              "w":  1273,
                                              "h":  1800,
                                              "desc":  "Cover image: the lamp over felted wool background with large yellow \u0027Tklapi Lamp\u0027 lettering overlaid (text is baked in).",
                                              "size":  "large"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-1-2.jpg",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-1-2.jpg",
                                              "w":  965,
                                              "h":  768,
                                              "desc":  "Technical drawings of the Tklapi Lamp, showing its circular frame, shade structure, measurements and construction notes.",
@@ -356,28 +356,28 @@ window.WORKS = {
                                       ],
                             "cuts":  [
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-2-1.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-2-1.webp",
                                              "w":  743,
                                              "h":  1800,
                                              "desc":  "Macro texture of amber dried fruit leather surface (full-height strip).",
                                              "size":  "medium"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-2-2.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-2-2.webp",
                                              "w":  630,
                                              "h":  804,
                                              "desc":  "Fig. 2.1: wild plum tklapi glowing deep red, backlit on the lamp.",
                                              "size":  "small"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-2-3.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-2-3.webp",
                                              "w":  727,
                                              "h":  980,
                                              "desc":  "Fig. 2.2: backlit apple tklapi glowing orange with a seed, beside a red panel.",
                                              "size":  "medium"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-2-4.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-2-4.webp",
                                              "w":  846,
                                              "h":  1015,
                                              "desc":  "Close-up of backlit red tklapi showing its cellular, firework-like texture.",
@@ -397,49 +397,49 @@ window.WORKS = {
                                       ],
                             "cuts":  [
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-3-1.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-3-1.webp",
                                              "w":  454,
                                              "h":  410,
                                              "desc":  "Rolls of dried tklapi sheets on a grey surface.",
                                              "size":  "small"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-3-2.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-3-2.webp",
                                              "w":  454,
                                              "h":  725,
                                              "desc":  "First experiment: tklapi pieces tied to flexible wood branches on a wooden floor.",
                                              "size":  "small"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-3-3.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-3-3.webp",
                                              "w":  490,
                                              "h":  720,
                                              "desc":  "Tklapi pinned onto the frame around the lamp socket with coloured pins.",
                                              "size":  "small"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-3-4.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-3-4.webp",
                                              "w":  490,
                                              "h":  720,
                                              "desc":  "Copper frame wrapped in white tape inside the partially covered shade.",
                                              "size":  "small"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-3-5.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-3-5.webp",
                                              "w":  522,
                                              "h":  1130,
                                              "desc":  "Close-up of the last pins holding brown tklapi panels.",
                                              "size":  "small"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-3-6.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-3-6.webp",
                                              "w":  443,
                                              "h":  797,
                                              "desc":  "The finished lamp hanging unlit (RAW), dark burgundy faceted shape.",
                                              "size":  "small"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-3-7.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-3-7.webp",
                                              "w":  979,
                                              "h":  1122,
                                              "desc":  "Close-up of red hand-stitching joining tklapi panels.",
@@ -456,21 +456,21 @@ window.WORKS = {
                                       ],
                             "cuts":  [
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-4-1.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-4-1.webp",
                                              "w":  1279,
                                              "h":  1800,
                                              "desc":  "Fig. 4.3: the final illuminated Tklapi Lamp glowing pink and orange against a wall.",
                                              "size":  "large"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-4-2.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-4-2.webp",
                                              "w":  454,
                                              "h":  797,
                                              "desc":  "Fig. 4.1: lit lamp from one side, pink top and yellow lower panels.",
                                              "size":  "small"
                                          },
                                          {
-                                             "src":  "assets/optimized/works/cuts/tklapi-lamp-4-3.webp",
+                                             "src":  "assets/optimized/works/cuts/half/tklapi-lamp-4-3.webp",
                                              "w":  446,
                                              "h":  797,
                                              "desc":  "Fig. 4.2: lit lamp rotated, showing purple and yellow panels.",
@@ -493,14 +493,14 @@ window.WORKS = {
                               ],
                     "cuts":  [
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-model-overhead.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-model-overhead.webp",
                                      "w":  770,
                                      "h":  768,
                                      "desc":  "Clear overhead view of the circular pavilion maquette, showing its outer and inner linen screens.",
                                      "size":  "large"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-model-previous-view.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-model-previous-view.webp",
                                      "w":  768,
                                      "h":  856,
                                      "desc":  "Overhead view of the pavilion maquette set within its broad clay landscape base.",
@@ -518,28 +518,28 @@ window.WORKS = {
                               ],
                     "cuts":  [
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-2-1.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-2-1.webp",
                                      "w":  1696,
                                      "h":  1206,
                                      "desc":  "Fig. 2.1: collage render of the timber pavilion with billowing linen standing in the sea, factory chimneys and birds in the background.",
                                      "size":  "large"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-2-2.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-2-2.webp",
                                      "w":  1423,
                                      "h":  768,
                                      "desc":  "Site map of Terneuzen harbour with a red dot marking the pavilion location on the pier (\u0027Project Location\u0027 label in corner).",
                                      "size":  "large"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-2-3.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-2-3.webp",
                                      "w":  673,
                                      "h":  400,
                                      "desc":  "Reference photo of translucent white fabric blowing in the wind against the sky.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-2-4.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-2-4.webp",
                                      "w":  736,
                                      "h":  1104,
                                      "desc":  "Reference photo of a hand behind sheer cream linen.",
@@ -555,63 +555,63 @@ window.WORKS = {
                               ],
                     "cuts":  [
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-sketch-structure.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-sketch-structure.webp",
                                      "w":  768,
                                      "h":  1117,
                                      "desc":  "Pencil perspective study of the pavilion’s timber frame and posts.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-3-2.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-3-2.webp",
                                      "w":  432,
                                      "h":  616,
                                      "desc":  "Sketchbook page of handwritten Georgian research notes in blue ink.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-sketch-concept.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-sketch-concept.webp",
                                      "w":  768,
                                      "h":  1115,
                                      "desc":  "Exploratory pencil and colour sketch developing the pavilion’s water concept.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-sketch-materials.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-sketch-materials.webp",
                                      "w":  768,
                                      "h":  1092,
                                      "desc":  "Pavilion plan and early material notes from the sketchbook.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-3-5.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-3-5.webp",
                                      "w":  421,
                                      "h":  616,
                                      "desc":  "Sketchbook page: red and blue plan of concentric polygon pavilion and elevation.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-sound-study.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-sound-study.webp",
                                      "w":  1024,
                                      "h":  768,
                                      "desc":  "Concrete/clay cone sound-funnel model on a chipboard base.",
                                      "size":  "medium"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-gauze-model-front.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-gauze-model-front.webp",
                                      "w":  640,
                                      "h":  854,
                                      "desc":  "Early pavilion study maquette: a bamboo frame with gauze screens on a clay base.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-gauze-model-side.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-gauze-model-side.webp",
                                      "w":  768,
                                      "h":  1365,
                                      "desc":  "Side view of the bamboo and gauze pavilion study maquette.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-landscape-study.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-landscape-study.webp",
                                      "w":  768,
                                      "h":  1024,
                                      "desc":  "Clay landscape maquette with an elevated, curving row of posts.",
@@ -632,28 +632,28 @@ window.WORKS = {
                               ],
                     "cuts":  [
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-4-1.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-4-1.webp",
                                      "w":  1336,
                                      "h":  764,
                                      "desc":  "Fig. 2.1: perspective photo of the study maquette, linen-hung balsa walls in concentric polygons.",
                                      "size":  "large"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-4-2.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-4-2.webp",
                                      "w":  1097,
                                      "h":  768,
                                      "desc":  "Fig. 2.2: pencil sketch of the pavilion with draped linen standing in waves, city skyline behind.",
                                      "size":  "large"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-4-3.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-4-3.webp",
                                      "w":  598,
                                      "h":  900,
                                      "desc":  "Reference photo of a hand shadow behind sheer beige linen.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-4-4.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-4-4.webp",
                                      "w":  736,
                                      "h":  920,
                                      "desc":  "Reference photo of cream fabric trailing into still water.",
@@ -669,21 +669,21 @@ window.WORKS = {
                               ],
                     "cuts":  [
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-5-1.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-5-1.webp",
                                      "w":  1261,
                                      "h":  1800,
                                      "desc":  "Surreal collage: timber frame with billowing white curtains over the sea, engraved clouds and a seated woman in a white dress.",
                                      "size":  "large"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-5-2.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-5-2.webp",
                                      "w":  640,
                                      "h":  959,
                                      "desc":  "Photo of a hand holding a cream dress hem as it dips into water.",
                                      "size":  "small"
                                  },
                                  {
-                                     "src":  "assets/optimized/works/cuts/zin-5-3.webp",
+                                     "src":  "assets/optimized/works/cuts/half/zin-5-3.webp",
                                      "w":  374,
                                      "h":  377,
                                      "desc":  "QR code linking to the project book.",
@@ -704,7 +704,7 @@ window.WORKS = {
                                         ],
                               "cuts":  [
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-1-1.webp",
+                                               "src":  "assets/optimized/works/cuts/half two/future-traces-1-1.webp",
                                                "w":  1800,
                                                "h":  900,
                                                "desc":  "Hero render: the terracotta Madonna-and-child icon in darkness with a beaded halo outline radiating white rays of light.",
@@ -723,49 +723,49 @@ window.WORKS = {
                                         ],
                               "cuts":  [
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-2-1.webp",
+                                               "src":  "assets/optimized/works/cuts/half two/future-traces-2-1.webp",
                                                "w":  1465,
                                                "h":  1155,
                                                "desc":  "Fig. 2.7: rust-red clay print of the icon left on the wrapping cloth.",
                                                "size":  "large"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-2-2.webp",
+                                               "src":  "assets/optimized/works/cuts/half two/future-traces-2-2.webp",
                                                "w":  572,
                                                "h":  819,
                                                "desc":  "Fig. 2.4: raw wet clay relief of mother and child in early shaping.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-2-3.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-2-3.webp",
                                                "w":  572,
                                                "h":  840,
                                                "desc":  "Fig. 2.5: smoother leather-hard clay relief with a pressed lily.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-2-4.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-2-4.webp",
                                                "w":  572,
                                                "h":  845,
                                                "desc":  "Fig. 2.6: the clay relief lit by a single candle in the dark.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-2-5.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-2-5.webp",
                                                "w":  299,
                                                "h":  481,
                                                "desc":  "Fig. 2.1: pencil sketch of the icon figures in a sketchbook.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-2-6.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-2-6.webp",
                                                "w":  299,
                                                "h":  481,
                                                "desc":  "Fig. 2.2: handwritten notes page with clay stains.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-2-7.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-2-7.webp",
                                                "w":  317,
                                                "h":  489,
                                                "desc":  "Fig. 2.3: notes on clay types and firing temperatures with a diagram.",
@@ -784,63 +784,63 @@ window.WORKS = {
                                         ],
                               "cuts":  [
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-1.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-1.webp",
                                                "w":  389,
                                                "h":  290,
                                                "desc":  "Glaze test tiles: fragments of coloured glaze samples.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-2.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-2.webp",
                                                "w":  436,
                                                "h":  585,
                                                "desc":  "Relief with white dotted halo glaze applied, unfired.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-3.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-3.webp",
                                                "w":  479,
                                                "h":  585,
                                                "desc":  "Relief with white glaze on halo and veil before firing.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-4.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-4.webp",
                                                "w":  389,
                                                "h":  420,
                                                "desc":  "Glaze test on a broken prototype fragment beside a glaze jar.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-5.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-5.webp",
                                                "w":  688,
                                                "h":  756,
                                                "desc":  "Fig. 2.7: bisque-fired terracotta relief after first firing.",
                                                "size":  "medium"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-6.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-6.webp",
                                                "w":  688,
                                                "h":  756,
                                                "desc":  "Fig. 2.8: glazed relief after second firing with blue robe and yellow halo.",
                                                "size":  "medium"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-7.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-7.webp",
                                                "w":  688,
                                                "h":  756,
                                                "desc":  "Fig. 2.9: relief after third firing showing the crack through Mary.",
                                                "size":  "medium"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-8.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-8.webp",
                                                "w":  630,
                                                "h":  1115,
                                                "desc":  "Fig. 2.6: the broken glazed icon in pieces on dark fabric.",
                                                "size":  "small"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-3-9.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-3-9.webp",
                                                "w":  778,
                                                "h":  603,
                                                "desc":  "Fig. 2.5: close-up of a broken edge showing glaze layers.",
@@ -859,21 +859,21 @@ window.WORKS = {
                                         ],
                               "cuts":  [
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-4-1.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-4-1.webp",
                                                "w":  864,
                                                "h":  944,
                                                "desc":  "The finished glazed terracotta icon, front view in bright light, crack visible.",
                                                "size":  "medium"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-4-2.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-4-2.webp",
                                                "w":  868,
                                                "h":  944,
                                                "desc":  "The finished icon front view in warm, darker light.",
                                                "size":  "medium"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-4-3.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-4-3.webp",
                                                "w":  864,
                                                "h":  944,
                                                "desc":  "Back of the icon with dotted halo outline and engraved Georgian inscription.",
@@ -890,21 +890,21 @@ window.WORKS = {
                                         ],
                               "cuts":  [
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-5-1.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-5-1.webp",
                                                "w":  1433,
                                                "h":  1692,
                                                "desc":  "Close-up of Mary\u0027s and the child\u0027s faces in glazed terracotta with the crack across her eyes.",
                                                "size":  "large"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-5-2.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-5-2.webp",
                                                "w":  1465,
                                                "h":  1110,
                                                "desc":  "Still from the animation: icon in darkness radiating rays from its beaded halo.",
                                                "size":  "large"
                                            },
                                            {
-                                               "src":  "assets/optimized/works/cuts/future-traces-5-3.webp",
+                                               "src":  "assets/optimized/works/cuts/half/future-traces-5-3.webp",
                                                "w":  367,
                                                "h":  366,
                                                "desc":  "QR code linking to the animation.",
@@ -925,14 +925,14 @@ window.WORKS = {
                                     ],
                           "cuts":  [
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-1-1.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-1-1.webp",
                                            "w":  1692,
                                            "h":  1608,
                                            "desc":  "Macro close-up of a dark felted wool handle on a crackle-glazed cream porcelain cup.",
                                            "size":  "large"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-1-2.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-1-2.webp",
                                            "w":  1692,
                                            "h":  1608,
                                            "desc":  "The cream porcelain cup with black wool loop handle on a grey backdrop.",
@@ -954,49 +954,49 @@ window.WORKS = {
                                     ],
                           "cuts":  [
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-2-1.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-2-1.webp",
                                            "w":  454,
                                            "h":  715,
                                            "desc":  "Fig. 1.1: perforated hand-pinched clay pot with red thread and wool tufts.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-2-2.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-2-2.webp",
                                            "w":  454,
                                            "h":  715,
                                            "desc":  "Fig. 1.2: glazed dark clay bowl with a twisted wool handle.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-2-3.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-2-3.webp",
                                            "w":  943,
                                            "h":  718,
                                            "desc":  "Fig. 1.3: spherical clay vessel with two wool rope handles.",
                                            "size":  "medium"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-2-4.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-2-4.webp",
                                            "w":  454,
                                            "h":  1120,
                                            "desc":  "Fig. 1.4: qvevri-shaped clay vessel with an arched wool handle.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-2-5.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-2-5.webp",
                                            "w":  454,
                                            "h":  1120,
                                            "desc":  "Fig. 1.5: tall stacked clay form with a wool loop handle.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-2-6.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-2-6.webp",
                                            "w":  936,
                                            "h":  715,
                                            "desc":  "Fig. 1.6: four pale clay bowl prototypes from the first molds.",
                                            "size":  "medium"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-2-7.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-2-7.webp",
                                            "w":  936,
                                            "h":  715,
                                            "desc":  "Fig. 1.7: dark clay bowl with a chunky wool loop handle.",
@@ -1017,98 +1017,98 @@ window.WORKS = {
                                     ],
                           "cuts":  [
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-1.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-1.webp",
                                            "w":  454,
                                            "h":  606,
                                            "desc":  "Fig. 2.1: needle-felting tool pressing black wool on a brush mat.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-2.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-2.webp",
                                            "w":  454,
                                            "h":  606,
                                            "desc":  "Fig. 2.1: hand using a felting tool on a yellow brush block.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-3.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-3.webp",
                                            "w":  454,
                                            "h":  606,
                                            "desc":  "Fig. 2.2: parallel black felted wool stripes.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-4.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-4.webp",
                                            "w":  454,
                                            "h":  606,
                                            "desc":  "Fig. 2.2: two wool stripes crossed in an X.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-5.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-5.webp",
                                            "w":  454,
                                            "h":  606,
                                            "desc":  "Fig. 2.2: more stripes layered in a crossing bundle.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-6.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-6.webp",
                                            "w":  454,
                                            "h":  606,
                                            "desc":  "Fig. 2.2: six stripes crossed on both sides.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-7.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-7.webp",
                                            "w":  454,
                                            "h":  603,
                                            "desc":  "Fig. 2.3: wool strands pushed through holes in a porcelain cup.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-8.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-8.webp",
                                            "w":  454,
                                            "h":  603,
                                            "desc":  "Fig. 2.3: close-up of wool radiating from an anchor hole.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-9.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-9.webp",
                                            "w":  454,
                                            "h":  603,
                                            "desc":  "Fig. 2.3: wool pinned at the anchor point with a pin.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-10.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-10.webp",
                                            "w":  454,
                                            "h":  603,
                                            "desc":  "Fig. 2.3: view into the glazed cup interior with wool above.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-11.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-11.webp",
                                            "w":  454,
                                            "h":  603,
                                            "desc":  "Fig. 2.3: cup with wool strands pulled up and down.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-12.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-12.webp",
                                            "w":  454,
                                            "h":  603,
                                            "desc":  "Fig. 2.3: wool wrapped around the cup body.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-13.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-13.webp",
                                            "w":  454,
                                            "h":  601,
                                            "desc":  "Fig. 2.4: knotted wool binding on the cup surface.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-3-14.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-3-14.webp",
                                            "w":  454,
                                            "h":  601,
                                            "desc":  "Fig. 2.4: finished black wool loop handle on the cream cup.",
@@ -1126,42 +1126,42 @@ window.WORKS = {
                                     ],
                           "cuts":  [
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-4-1.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-4-1.webp",
                                            "w":  1346,
                                            "h":  1800,
                                            "desc":  "Fig. 3.6: macro of cream wool handle threaded through glazed anchor holes on a dark blue cup.",
                                            "size":  "large"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-4-2.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-4-2.webp",
                                            "w":  734,
                                            "h":  1117,
                                            "desc":  "Fig. 3.4: cream crackle-glazed cup held up by its black wool handle.",
                                            "size":  "medium"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-4-3.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-4-3.webp",
                                            "w":  731,
                                            "h":  1117,
                                            "desc":  "Fig. 3.5: crackle glaze rim of a cream cup against a dark background.",
                                            "size":  "medium"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-4-4.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-4-4.webp",
                                            "w":  310,
                                            "h":  481,
                                            "desc":  "Fig. 3.1: close-up of a dark reactive-glaze cup rim.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-4-5.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-4-5.webp",
                                            "w":  310,
                                            "h":  481,
                                            "desc":  "Fig. 3.2: dark glazed cup with cream wool loop handle.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-4-6.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-4-6.webp",
                                            "w":  310,
                                            "h":  481,
                                            "desc":  "Fig. 3.3: dark glazed cup with cream wool anchor binding, front view.",
@@ -1178,56 +1178,56 @@ window.WORKS = {
                                     ],
                           "cuts":  [
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-5-1.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-5-1.webp",
                                            "w":  850,
                                            "h":  1800,
                                            "desc":  "Fig. 4.6: three stacked wool-handled cups (dark, cream, pink) on a tree stump among grass.",
                                            "size":  "medium"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-5-2.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-5-2.webp",
                                            "w":  637,
                                            "h":  407,
                                            "desc":  "Fig. 4.1: dog lying in grass beside cups filled with plums.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-5-3.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-5-3.webp",
                                            "w":  637,
                                            "h":  407,
                                            "desc":  "Fig. 4.2: blurred dog grabbing at the pink cup.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-5-4.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-5-4.webp",
                                            "w":  637,
                                            "h":  405,
                                            "desc":  "Fig. 4.3: dog paw near the pink cup in the grass.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-5-5.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-5-5.webp",
                                            "w":  637,
                                            "h":  410,
                                            "desc":  "Fig. 4.4: cups and scattered plums left in the grass.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-5-6.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-5-6.webp",
                                            "w":  637,
                                            "h":  407,
                                            "desc":  "Fig. 4.5: remaining cups in the grass, the pink cup gone.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-5-7.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-5-7.webp",
                                            "w":  652,
                                            "h":  410,
                                            "desc":  "Fig. 5.1: German shepherd Obi sniffing a pink cup held out by hand.",
                                            "size":  "small"
                                        },
                                        {
-                                           "src":  "assets/optimized/works/cuts/wool-cups-5-8.webp",
+                                           "src":  "assets/optimized/works/cuts/half/wool-cups-5-8.webp",
                                            "w":  652,
                                            "h":  405,
                                            "desc":  "Fig. 5.2: Obi licking the pink cup.",
