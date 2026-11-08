@@ -240,13 +240,13 @@ function renderBlock(id, block) {
     case "video": {
         section.classList.toggle("story-video--with-text", Boolean(block.text));
         const player = element("video", "story-video-player");
-        player.src = block.src;
+        player.dataset.src = block.src;
         player.autoplay = true;
         player.controls = true;
         player.playsInline = true;
         player.muted = false;
         player.loop = true;
-        player.preload = "metadata";
+        player.preload = "none";
         if (block.poster) {
             player.poster = block.poster;
         }
@@ -268,18 +268,32 @@ function renderBlock(id, block) {
             playButton.hidden = true;
             status.textContent = "";
         });
-        playButton.addEventListener("click", () => {
-            player.play().catch(() => {
-                status.textContent = "The video could not start. Please try the player controls.";
+        const loadVideo = () => {
+            if (!player.src) {
+                player.src = player.dataset.src;
+            }
+            player.play().catch((error) => {
+                playButton.hidden = false;
+                status.textContent = error.name === "NotAllowedError"
+                    ? "Your browser blocked autoplay with sound. Choose “Play video with sound” to start it."
+                    : "The video could not start automatically. Choose “Play video with sound” to try again.";
             });
+        };
+        playButton.addEventListener("click", () => {
+            loadVideo();
         });
         add(block.text ? element("p", "story-text", block.text) : null, media, caption(block.caption));
-        player.play().catch((error) => {
-            playButton.hidden = false;
-            status.textContent = error.name === "NotAllowedError"
-                ? "Your browser blocked autoplay with sound. Choose “Play video with sound” to start it."
-                : "The video could not start automatically. Choose “Play video with sound” to try again.";
-        });
+        if ("IntersectionObserver" in window) {
+            const videoObserver = new IntersectionObserver((entries) => {
+                if (entries.some((entry) => entry.isIntersecting)) {
+                    videoObserver.disconnect();
+                    loadVideo();
+                }
+            }, { rootMargin: "300px" });
+            videoObserver.observe(player);
+        } else {
+            loadVideo();
+        }
         break;
     }
     case "mosaic": {
