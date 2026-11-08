@@ -1,0 +1,8 @@
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Unused source video exceeds GitHub's 100 MB per-file limit.
+# The site uses the optimized video instead.
+/assets/works/future-traces-new-mary.mp4

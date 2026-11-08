@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="theme-color" content="#f3e2e3">
+    <meta name="description" content="Read the ZIN project book by Lizza Tivadze, with the cover alone and the remaining pages in facing pairs.">
+    <title>ZIN Project Book — Lizza Tivadze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300;400&display=swap" media="print" onload="this.media='all'">
+    <script src="assets/data/zin-book-reader.js" defer></script>
+</head>
+<body class="zin-book-page">
+    <header class="zin-book-toolbar">
+        <a class="zin-book-back" href="project.html?id=zin">← Back to ZIN</a>
+        <a class="button" href="assets/docs/zin-project-book.pdf" download="ZIN-project-book.pdf">Download the original PDF ↓</a>
+    </header>
+    <main class="zin-book-main">
+        <div class="zin-book-heading">
+            <h1>ZIN — Project Book</h1>
+            <p>Cover alone, then pages 2–3, 4–5 and onward · Use arrows or your keyboard</p>
+        </div>
+        <div class="zin-book-spread-frame">
+            <img class="zin-book-spread" src="assets/optimized/docs/zin-book-spreads/cover.webp" alt="Cover, page 1 of the ZIN project book">
+        </div>
+        <nav class="zin-book-controls" aria-label="Book pages">
+            <button class="button" type="button" data-book-previous disabled>← Previous</button>
+            <output class="zin-book-page-count" aria-live="polite">Cover · Page 1 of 48</output>
+            <button class="button" type="button" data-book-next>Next →</button>
+        </nav>
+        <noscript><p>JavaScript is required to turn pages. You can still <a href="assets/docs/zin-project-book.pdf" download>download the complete PDF</a>.</p></noscript>
+    </main>
+</body>
+</html>

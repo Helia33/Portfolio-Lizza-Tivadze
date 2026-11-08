@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="theme-color" content="#f3e7ec">
+    <meta name="description" content="Lizza Tivadze (Helia) — object and spatial designer working with material, memory and place.">
+    <title>Helia — Lizza Tivadze, Object &amp; Spatial Designer</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300;400&display=swap" media="print" onload="this.media='all'">
+    <script src="script.js" defer></script>
+</head>
+<body class="landing" data-veil="0">
+    <canvas class="mist-canvas" id="mist-canvas" aria-hidden="true"></canvas>
+    <div class="mist-veil" aria-hidden="true"></div>
+    <div class="motes" id="motes" aria-hidden="true"></div>
+    <div class="cursor-orb" id="cursor-orb" aria-hidden="true"></div>
+    <div class="curtain" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Helia, home">
+            <span class="wordmark-mark">Helia</span>
+            <span class="wordmark-caption">Lizza Tivadze<br>Object &amp; spatial designer</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="work.html" data-travel><span>01</span>Work</a>
+            <a href="about.html" data-travel><span>02</span>About</a>
+            <a href="cv.html" data-travel><span>03</span>Résumé</a>
+            <a href="about.html#contact" data-travel><span>04</span>Contact</a>
+        </nav>
+    </header>
+
+    <main class="home">
+        <section class="home-title" aria-labelledby="home-title">
+            <p class="eyebrow home-step" style="--step: 1;">Lizza Tivadze <span aria-hidden="true">—</span> Object &amp; spatial designer</p>
+            <h1 class="home-heading" id="home-title"><span class="home-line" style="--step: 2;">Where memory</span><span class="home-line" style="--step: 3;">meets matter</span></h1>
+            <p class="home-whisper home-step" style="--step: 4;">This landscape comes from the same questions as my work: how we experience a place and what stays with us.</p>
+            <div class="home-actions home-step" style="--step: 5;">
+                <a class="home-enter" href="work.html" data-travel><span class="home-enter-line" aria-hidden="true"></span>View my work</a>
+                <button class="home-wander" id="wander-toggle" type="button"><span class="wander-ring" aria-hidden="true"><svg viewBox="-36 -36 72 72" focusable="false"><path d="M0 -15 C 3 -25, 15 -33, 27 -28 C 35 -24, 34 -15, 27 -13 C 22 -11, 18 -16, 21 -20" transform="rotate(0)"/><path d="M0 -15 C 3 -25, 15 -33, 27 -28 C 35 -24, 34 -15, 27 -13 C 22 -11, 18 -16, 21 -20" transform="rotate(51.43)"/><path d="M0 -15 C 3 -25, 15 -33, 27 -28 C 35 -24, 34 -15, 27 -13 C 22 -11, 18 -16, 21 -20" transform="rotate(102.86)"/><path d="M0 -15 C 3 -25, 15 -33, 27 -28 C 35 -24, 34 -15, 27 -13 C 22 -11, 18 -16, 21 -20" transform="rotate(154.29)"/><path d="M0 -15 C 3 -25, 15 -33, 27 -28 C 35 -24, 34 -15, 27 -13 C 22 -11, 18 -16, 21 -20" transform="rotate(205.71)"/><path d="M0 -15 C 3 -25, 15 -33, 27 -28 C 35 -24, 34 -15, 27 -13 C 22 -11, 18 -16, 21 -20" transform="rotate(257.14)"/><path d="M0 -15 C 3 -25, 15 -33, 27 -28 C 35 -24, 34 -15, 27 -13 C 22 -11, 18 -16, 21 -20" transform="rotate(308.57)"/></svg></span>Wander the landscape</button>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="explore-hud" aria-label="Explore the landscape">
+        <p class="explore-hint">Drag to look in every direction <span aria-hidden="true">·</span> W A S D or arrows to travel <span aria-hidden="true">·</span> E to rise, Q to sink <span aria-hidden="true">·</span> Shift to hurry</p>
+        <div class="explore-pad" role="group" aria-label="Move">
+            <button type="button" data-move="up" aria-label="Rise">Up</button>
+            <button type="button" data-move="down" aria-label="Sink">Down</button>
+            <button type="button" data-move="forward" aria-label="Move forward">↑</button>
+            <button type="button" data-move="left" aria-label="Move left">←</button>
+            <button type="button" data-move="back" aria-label="Move back">↓</button>
+            <button type="button" data-move="right" aria-label="Move right">→</button>
+        </div>
+        <button class="explore-return" id="explore-return" type="button">Return <span aria-hidden="true">· Esc</span></button>
+    </div>
+</body>
+</html>

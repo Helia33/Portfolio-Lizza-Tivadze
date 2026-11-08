@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="theme-color" content="#f3e7ec">
+    <meta name="description" content="Selected object, spatial and material research projects by Lizza Tivadze (Helia).">
+    <title>Work — Lizza Tivadze</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300;400&display=swap" media="print" onload="this.media='all'">
+    <script src="assets/data/works.js" defer></script>
+    <script src="assets/data/mapping-photos.js" defer></script>
+    <script src="assets/data/tklapi-photos.js" defer></script>
+    <script src="assets/data/wool-cups-photos.js" defer></script>
+    <script src="assets/data/future-traces-photos.js" defer></script>
+    <script src="assets/data/stories.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="inner" data-veil="0.4">
+    <canvas class="mist-canvas" id="mist-canvas" aria-hidden="true"></canvas>
+    <div class="mist-veil" aria-hidden="true"></div>
+    <div class="motes" id="motes" aria-hidden="true"></div>
+    <div class="cursor-orb" id="cursor-orb" aria-hidden="true"></div>
+    <div class="curtain" aria-hidden="true"></div>
+
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+        <filter id="ripple" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="ripple-noise" type="fractalNoise" baseFrequency="0.006 0.01" numOctaves="2" seed="4"/>
+            <feDisplacementMap in="SourceGraphic" scale="22" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+    </svg>
+
+    <header class="site-header">
+        <a class="wordmark" href="index.html" data-travel aria-label="Helia, home">
+            <span class="wordmark-mark">Helia</span>
+            <span class="wordmark-caption">Lizza Tivadze<br>Object &amp; spatial designer</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="work.html" aria-current="page"><span>01</span>Work</a>
+            <a href="about.html" data-travel><span>02</span>About</a>
+            <a href="cv.html" data-travel><span>03</span>Résumé</a>
+            <a href="about.html#contact" data-travel><span>04</span>Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro section-wrap" aria-labelledby="page-title">
+            <p class="eyebrow reveal">Selected work <span aria-hidden="true">/</span> 2024—2026</p>
+            <h1 class="page-title reveal" id="page-title">Things that<br>hold a world</h1>
+            <p class="page-lede reveal">Objects, spaces and material experiments made by listening closely—to a place, a memory, a material, or the body.</p>
+        </section>
+
+        <section class="work-index section-wrap reveal" aria-label="Project index">
+            <div class="index-head" aria-hidden="true"><span>No.</span><span>Project</span><span>Discipline</span><span>Year</span></div>
+            <ol class="index-list">
+                <li><a class="index-row" href="project.html?id=wool-cups" data-travel data-preview="assets/optimized/works/wool-cups/originals/DG104179.webp"><span>01</span><span>Wool Cups</span><span>Object design</span><span>2026</span></a></li>
+                <li><a class="index-row" href="project.html?id=tklapi-lamp" data-travel data-preview="assets/optimized/works/tklapi-lamp/originals/Untitled-1.webp" data-preview-fit="portrait"><span>02</span><span>Tklapi Lamp</span><span>Material-led lighting</span><span>2025</span></a></li>
+                <li><a class="index-row" href="project.html?id=zin" data-travel data-preview="assets/optimized/works/cuts/zin-2-1.webp"><span>03</span><span>ZIN</span><span>Architecture</span><span>2025</span></a></li>
+                <li><a class="index-row" href="project.html?id=closet-memories" data-travel data-preview="assets/optimized/works/cuts/closet-memories-2-1.webp"><span>04</span><span>A Closet of Memories</span><span>Mapping in a Closet of Memories</span><span>2025</span></a></li>
+                <li><a class="index-row" href="project.html?id=future-traces" data-travel data-preview="assets/optimized/works/future-traces/final-front.webp"><span>05</span><span>Future Traces</span><span>Sculpture &amp; digital image</span><span>2025</span></a></li>
+            </ol>
+            <div class="index-preview" id="index-preview" aria-hidden="true"><img alt="" src="assets/optimized/works/cuts/closet-memories-2-1.webp"></div>
+        </section>
+
+        <section class="exhibition" id="exhibition" aria-label="Projects">
+            <noscript>
+                <ul class="section-wrap">
+                <li><a href="project.html?id=wool-cups">Wool Cups</a></li>
+                <li><a href="project.html?id=tklapi-lamp">Tklapi Lamp</a></li>
+                <li><a href="project.html?id=zin">ZIN</a></li>
+                <li><a href="project.html?id=closet-memories">A Closet of Memories</a></li>
+                <li><a href="project.html?id=future-traces">Future Traces</a></li>
+                </ul>
+            </noscript>
+        </section>
+
+        <section class="next-space section-wrap reveal" aria-label="Next">
+            <p class="eyebrow">Next space</p>
+            <a class="next-link" href="about.html" data-travel>About the practice <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© <span data-year>2026</span> Lizza Tivadze</span>
+        <a href="index.html" data-travel>Return to the mist ↑</a>
+    </footer>
+</body>
+</html>
