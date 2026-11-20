@@ -241,16 +241,20 @@ function renderBlock(id, block) {
         break;
     }
     case "video": {
-        const playOnArrival = id === "future-traces" || id === "bugsphere";
+        const playOnArrival = id === "future-traces";
+        const manualPlayback = id === "bugsphere";
         section.classList.toggle("story-video--with-text", Boolean(block.text));
         const player = element("video", "story-video-player");
         player.dataset.src = block.src;
-        player.autoplay = true;
+        player.autoplay = !manualPlayback;
         player.controls = true;
         player.playsInline = true;
         player.muted = false;
         player.loop = true;
         player.preload = playOnArrival ? "auto" : "none";
+        if (manualPlayback) {
+            player.src = block.src;
+        }
         if (block.poster) {
             player.poster = block.poster;
         }
@@ -286,9 +290,6 @@ function renderBlock(id, block) {
             loadVideo();
         };
         player.addEventListener("playing", () => {
-            if (playOnArrival) {
-                ambience.pause();
-            }
             clearArrivalPrompt();
             playButton.hidden = true;
             status.textContent = "";
@@ -304,9 +305,11 @@ function renderBlock(id, block) {
             pendingPlay = true;
             player.play().catch((error) => {
                 playButton.hidden = false;
-                status.textContent = error.name === "NotAllowedError"
-                    ? "Your browser blocked autoplay with sound. Choose “Play video with sound” to start it."
-                    : "The video could not start automatically. Choose “Play video with sound” to try again.";
+                status.textContent = manualPlayback
+                    ? "The video could not start. Choose “Play video with sound” to try again."
+                    : error.name === "NotAllowedError"
+                        ? "Your browser blocked autoplay with sound. Choose “Play video with sound” to start it."
+                        : "The video could not start automatically. Choose “Play video with sound” to try again.";
                 if (playOnArrival) {
                     if (!arrivalPrompt) {
                         arrivalPrompt = element("div", "video-arrival-prompt");
@@ -334,6 +337,8 @@ function renderBlock(id, block) {
         add(block.text ? element("p", "story-text", block.text) : null, media, caption(block.caption));
         if (playOnArrival) {
             loadVideo();
+        } else if (manualPlayback) {
+            playButton.hidden = false;
         } else if ("IntersectionObserver" in window) {
             const videoObserver = new IntersectionObserver((entries) => {
                 if (entries.some((entry) => entry.isIntersecting)) {
@@ -895,7 +900,7 @@ const ambience = (() => {
                     video.volume = 1;
                 }
                 video.muted = false;
-                if (video.paused) {
+                if (video.paused && project !== "bugsphere") {
                     const playButton = document.querySelector(".video-arrival-prompt button, .story-video-play");
                     if (playButton) {
                         playButton.click();
