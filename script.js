@@ -278,6 +278,9 @@ function renderBlock(id, block) {
             if (event.type === "keydown" && event.repeat) {
                 return;
             }
+            if (event.target.closest && event.target.closest(".sound-toggle")) {
+                return;
+            }
             document.removeEventListener("pointerdown", retryOnGesture, true);
             document.removeEventListener("keydown", retryOnGesture, true);
             loadVideo();
@@ -850,9 +853,16 @@ if (finePointer) {
 /* ---------- Sound: a generative ambience of the age of mist ---------- */
 
 const ambience = (() => {
-    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
     const header = document.querySelector(".site-header");
-    if (!AudioContextClass || !header) {
+    if (!header) {
+        return { fadeOut() {}, pause() {} };
+    }
+
+    const project = document.body.dataset.project || new URLSearchParams(window.location.search).get("id");
+    const video = (project === "future-traces" || project === "bugsphere")
+        ? document.querySelector(".story-video-player") : null;
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (!video && !AudioContextClass) {
         return { fadeOut() {}, pause() {} };
     }
 
@@ -864,15 +874,41 @@ const ambience = (() => {
         console.warn("Could not read the sound preference.", error);
     }
 
-    const project = document.body.dataset.project || new URLSearchParams(window.location.search).get("id");
     const button = document.createElement("button");
     button.type = "button";
     button.className = "sound-toggle";
-    button.hidden = project === "future-traces" || project === "bugsphere";
     button.setAttribute("aria-pressed", "false");
     button.setAttribute("aria-label", "Turn sound on");
     button.innerHTML = '<span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Sound</span>';
     header.appendChild(button);
+
+    if (video) {
+        const syncVideoSound = () => {
+            const audible = !video.muted && video.volume > 0;
+            button.setAttribute("aria-pressed", String(audible));
+            button.setAttribute("aria-label", audible ? "Mute video sound" : "Turn video sound on");
+        };
+        video.addEventListener("volumechange", syncVideoSound);
+        button.addEventListener("click", () => {
+            if (video.muted || video.volume === 0) {
+                if (video.volume === 0) {
+                    video.volume = 1;
+                }
+                video.muted = false;
+                if (video.paused) {
+                    const playButton = document.querySelector(".video-arrival-prompt button, .story-video-play");
+                    if (playButton) {
+                        playButton.click();
+                    }
+                }
+            } else {
+                video.muted = true;
+            }
+            syncVideoSound();
+        });
+        syncVideoSound();
+        return { fadeOut() {}, pause() {} };
+    }
 
     // D major pentatonic, the open, unresolved scale of bells heard across water
     const scale = [293.66, 329.63, 369.99, 440, 493.88, 587.33, 659.25, 739.99, 880];
