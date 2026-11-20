@@ -1,6 +1,6 @@
 # Helia — Lizza Tivadze
 
-Static portfolio website built with HTML, CSS, and JavaScript. No build step or package installation is required.
+Static portfolio website built with HTML, CSS, and JavaScript. No build step or package installation is required to serve it.
 
 ## Project structure
 
@@ -26,6 +26,10 @@ Keep the HTML pages, stylesheet, and main script at the repository root. This le
 ```
 
 The folders under `assets/` are intentionally grouped by purpose. Do not rename or move them unless you also update every reference in the HTML, CSS, and JavaScript.
+
+Project stories and image references live in `assets/data/`. After changing those files, run `node scripts/build-project-pages.cjs` to regenerate the static project pages and sharing metadata. Commit the generated HTML alongside the data changes. Old `project.html?id=...` links redirect to the corresponding static page when JavaScript is enabled; without it the old page lists the projects.
+
+The Sound control remembers the visitor’s background-ambience preference in browser storage across pages. The site attempts to start it on arrival, but browsers may require a tap first. Future Traces and Bugsphere also have a separate Video sound control; background ambience pauses during video playback and resumes afterwards if enabled. Future Traces attempts to play with sound on arrival; browsers that block audible autoplay show a play button instead. Bugsphere plays only when the viewer starts its film.
 
 ## Upload the complete site to GitHub
 

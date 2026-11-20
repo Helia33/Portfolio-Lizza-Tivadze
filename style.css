@@ -247,6 +247,13 @@ html.no-webgl .mist-veil {
         radial-gradient(ellipse at 20% 80%, rgb(233 199 204 / 22%), transparent 55%);
 }
 
+html.no-webgl .landing .mist-veil {
+    background:
+        radial-gradient(ellipse at 66% 28%, rgb(255 226 226 / 30%), transparent 45%),
+        linear-gradient(rgb(243 231 236 / 55%), rgb(243 231 236 / 55%)),
+        url("assets/images/georgian-landscape.jpg") center / cover no-repeat;
+}
+
 .motes {
     position: fixed;
     inset: 0;
@@ -687,10 +694,25 @@ html.no-webgl .borjgali {
     transition: opacity 1.2s ease, filter 1.2s ease;
 }
 
+.landing.is-exploring .home-actions {
+    position: fixed;
+    top: 100px;
+    left: 4.5vw;
+    z-index: 21;
+    opacity: 1;
+    filter: none;
+    pointer-events: auto;
+}
+
 .landing.is-exploring .home {
-    opacity: 0;
-    filter: blur(12px);
+    opacity: 1;
+    filter: none;
     pointer-events: none;
+}
+
+.landing.is-exploring .home-title > :not(.home-actions),
+.landing.is-exploring .home-wander {
+    visibility: hidden;
 }
 
 .explore-hud {
@@ -708,6 +730,11 @@ html.no-webgl .borjgali {
     pointer-events: none;
     transform: translateY(12px);
     transition: opacity 1s ease 0.3s, transform 1s var(--ease) 0.3s;
+}
+
+.explore-hud[hidden],
+.home-wander[hidden] {
+    display: none;
 }
 
 .landing.is-exploring .explore-hud {
@@ -840,6 +867,11 @@ html.no-webgl .borjgali {
     transition: color 400ms ease;
 }
 
+.video-sound-toggle {
+    order: 4;
+    margin-left: 18px;
+}
+
 .sound-toggle:hover,
 .sound-toggle:focus-visible,
 .sound-toggle[aria-pressed="true"] {
@@ -897,7 +929,7 @@ html.no-webgl .borjgali {
 }
 
 .menu-toggle {
-    order: 4;
+    order: 5;
 }
 
 /* ---------- Inner pages ---------- */
@@ -1598,6 +1630,10 @@ html.no-webgl .borjgali {
         margin-left: auto;
     }
 
+    .video-sound-toggle {
+        margin-left: 0;
+    }
+
     .explore-hud {
         flex-wrap: wrap;
         padding-inline: 20px;
@@ -1981,6 +2017,28 @@ html.no-webgl .borjgali {
     display: grid;
     min-width: 0;
     gap: 12px;
+}
+
+.video-arrival-prompt {
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    bottom: 24px;
+    width: min(90vw, 460px);
+    padding: 18px;
+    transform: translateX(-50%);
+    background: #f3e7ec;
+    box-shadow: 0 8px 30px rgb(18 13 15 / 25%);
+}
+
+.video-arrival-prompt p {
+    margin: 0 0 12px;
+    color: var(--ink);
+    font-size: 14px;
+}
+
+.sound-toggle[hidden] {
+    display: none;
 }
 
 .story-video-player {
