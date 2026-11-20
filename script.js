@@ -249,7 +249,7 @@ function renderBlock(id, block) {
         player.playsInline = true;
         player.muted = false;
         player.loop = true;
-        player.preload = "none";
+        player.preload = id === "future-traces" ? "auto" : "none";
         if (block.poster) {
             player.poster = block.poster;
         }
@@ -264,29 +264,73 @@ function renderBlock(id, block) {
         status.setAttribute("aria-live", "polite");
         media.append(player, playButton, status);
 
+        let arrivalPrompt = null;
+        const clearArrivalPrompt = () => {
+            if (arrivalPrompt) {
+                arrivalPrompt.remove();
+                arrivalPrompt = null;
+            }
+            document.removeEventListener("pointerdown", retryOnGesture, true);
+            document.removeEventListener("keydown", retryOnGesture, true);
+        };
+        const retryOnGesture = (event) => {
+            if (event.type === "keydown" && event.repeat) {
+                return;
+            }
+            document.removeEventListener("pointerdown", retryOnGesture, true);
+            document.removeEventListener("keydown", retryOnGesture, true);
+            loadVideo();
+        };
         player.addEventListener("playing", () => {
             if (id === "future-traces" || id === "bugsphere") {
                 ambience.pause();
             }
+            clearArrivalPrompt();
             playButton.hidden = true;
             status.textContent = "";
         });
+        let pendingPlay = false;
         const loadVideo = () => {
+            if (pendingPlay || !player.paused) {
+                return;
+            }
             if (!player.src) {
                 player.src = player.dataset.src;
             }
+            pendingPlay = true;
             player.play().catch((error) => {
                 playButton.hidden = false;
                 status.textContent = error.name === "NotAllowedError"
                     ? "Your browser blocked autoplay with sound. Choose “Play video with sound” to start it."
                     : "The video could not start automatically. Choose “Play video with sound” to try again.";
+                if (id === "future-traces") {
+                    if (!arrivalPrompt) {
+                        arrivalPrompt = element("div", "video-arrival-prompt");
+                        const message = element("p", "", "");
+                        message.setAttribute("role", "status");
+                        const start = element("button", "button", "Play Future Traces with sound");
+                        start.type = "button";
+                        start.addEventListener("click", loadVideo);
+                        arrivalPrompt.append(message, start);
+                        storyRoot.prepend(arrivalPrompt);
+                    }
+                    arrivalPrompt.querySelector("p").textContent = status.textContent;
+                    if (error.name === "NotAllowedError") {
+                        document.addEventListener("pointerdown", retryOnGesture, true);
+                        document.addEventListener("keydown", retryOnGesture, true);
+                    }
+                }
+            }).finally(() => {
+                pendingPlay = false;
             });
         };
         playButton.addEventListener("click", () => {
             loadVideo();
         });
         add(block.text ? element("p", "story-text", block.text) : null, media, caption(block.caption));
-        if ("IntersectionObserver" in window) {
+        if (id === "future-traces") {
+            loadVideo();
+        } else if ("IntersectionObserver" in window) {
             const videoObserver = new IntersectionObserver((entries) => {
                 if (entries.some((entry) => entry.isIntersecting)) {
                     videoObserver.disconnect();
@@ -819,9 +863,11 @@ const ambience = (() => {
         console.warn("Could not read the sound preference.", error);
     }
 
+    const project = document.body.dataset.project || new URLSearchParams(window.location.search).get("id");
     const button = document.createElement("button");
     button.type = "button";
     button.className = "sound-toggle";
+    button.hidden = project === "future-traces";
     button.setAttribute("aria-pressed", "false");
     button.setAttribute("aria-label", "Turn sound on");
     button.innerHTML = '<span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Sound</span>';
@@ -1038,7 +1084,6 @@ const ambience = (() => {
         setEnabled(true);
     };
     // These films carry their own sound, so ambience stays off unless chosen on the page.
-    const project = document.body.dataset.project || new URLSearchParams(window.location.search).get("id");
     const silentPage = project === "bugsphere" || project === "future-traces";
     if (!silentPage && preference !== "false") {
         setEnabled(true);
