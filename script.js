@@ -967,6 +967,7 @@ const ambience = (() => {
     let mediaPauseTimer = 0;
     const setEnabled = (value) => {
         window.clearTimeout(mediaPauseTimer);
+        const wasEnabled = enabled;
         enabled = value;
         button.setAttribute("aria-pressed", String(value));
         button.setAttribute("aria-label", value ? "Turn sound off" : "Turn sound on");
@@ -987,7 +988,10 @@ const ambience = (() => {
                 );
                 window.clearTimeout(chimeTimer);
             });
-            rampTo(0.55, 3);
+            rampTo(0.55, 0.12);
+            if (!wasEnabled) {
+                chime(0.045);
+            }
             scheduleChimes();
         } else if (context) {
             window.clearTimeout(chimeTimer);
