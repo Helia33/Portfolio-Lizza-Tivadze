@@ -867,6 +867,11 @@ html.no-webgl .borjgali {
     transition: color 400ms ease;
 }
 
+.video-sound-toggle {
+    order: 4;
+    margin-left: 18px;
+}
+
 .sound-toggle:hover,
 .sound-toggle:focus-visible,
 .sound-toggle[aria-pressed="true"] {
@@ -924,7 +929,7 @@ html.no-webgl .borjgali {
 }
 
 .menu-toggle {
-    order: 4;
+    order: 5;
 }
 
 /* ---------- Inner pages ---------- */
@@ -1623,6 +1628,10 @@ html.no-webgl .borjgali {
     .sound-toggle {
         margin-right: 20px;
         margin-left: auto;
+    }
+
+    .video-sound-toggle {
+        margin-left: 0;
     }
 
     .explore-hud {
