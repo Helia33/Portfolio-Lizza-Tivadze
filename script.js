@@ -916,7 +916,7 @@ const ambience = (() => {
     button.className = "sound-toggle ambience-toggle";
     button.setAttribute("aria-pressed", "false");
     button.setAttribute("aria-label", "Turn background sound on");
-    button.innerHTML = '<span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Music</span>';
+    button.innerHTML = '<span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Sound</span>';
     header.appendChild(button);
 
     // D major pentatonic, the open, unresolved scale of bells heard across water
@@ -951,6 +951,7 @@ const ambience = (() => {
 
     const build = () => {
         context = new AudioContextClass();
+        context.addEventListener("statechange", syncSoundControl);
         master = context.createGain();
         master.gain.value = 0;
         master.connect(context.createDynamicsCompressor()).connect(context.destination);
@@ -1058,15 +1059,19 @@ const ambience = (() => {
 
     let mediaPauseTimer = 0;
     let videoPlaying = video && !video.paused && !video.ended;
+    const syncSoundControl = () => {
+        const waiting = enabled && !videoPlaying && context && context.state === "suspended";
+        button.querySelector(".sound-label").textContent = waiting ? "Tap for sound" : "Sound";
+        button.setAttribute("aria-pressed", String(enabled));
+        button.setAttribute("aria-label", waiting ? "Start background sound" : enabled ? "Turn background sound off" : "Turn background sound on");
+    };
     const setEnabled = (value) => {
         window.clearTimeout(mediaPauseTimer);
         const wasEnabled = enabled;
         enabled = value;
-        button.setAttribute("aria-pressed", String(value));
-        button.setAttribute("aria-label", value ? "Turn background sound off" : "Turn background sound on");
-
         if (value) {
             if (videoPlaying) {
+                syncSoundControl();
                 return;
             }
             if (!context) {
@@ -1076,12 +1081,8 @@ const ambience = (() => {
                 if (!enabled) {
                     return;
                 }
-                enabled = false;
-                button.setAttribute("aria-pressed", "false");
-                button.setAttribute(
-                    "aria-label",
-                    error.name === "NotAllowedError" ? "Tap or press a key to start sound" : "Sound unavailable"
-                );
+                console.warn("Background sound could not start.", error);
+                syncSoundControl();
                 window.clearTimeout(chimeTimer);
             });
             rampTo(0.55, 0.12);
@@ -1098,9 +1099,14 @@ const ambience = (() => {
                 }
             }, 1400);
         }
+        syncSoundControl();
     };
 
     button.addEventListener("click", () => {
+        if (enabled && !videoPlaying && context && context.state === "suspended") {
+            setEnabled(true);
+            return;
+        }
         const next = !enabled;
         preference = next ? "true" : "false";
         try {
@@ -1138,6 +1144,7 @@ const ambience = (() => {
     if (video) {
         video.addEventListener("playing", () => {
             videoPlaying = true;
+            syncSoundControl();
             if (enabled && context) {
                 window.clearTimeout(chimeTimer);
                 rampTo(0, 0.1);
@@ -1152,6 +1159,8 @@ const ambience = (() => {
             videoPlaying = false;
             if (enabled) {
                 setEnabled(true);
+            } else {
+                syncSoundControl();
             }
         };
         video.addEventListener("pause", resumeAfterVideo);
