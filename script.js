@@ -1061,7 +1061,6 @@ const ambience = (() => {
     let videoPlaying = video && !video.paused && !video.ended;
     const syncSoundControl = () => {
         const waiting = enabled && !videoPlaying && context && context.state === "suspended";
-        button.querySelector(".sound-label").textContent = waiting ? "Tap for sound" : "Sound";
         button.setAttribute("aria-pressed", String(enabled));
         button.setAttribute("aria-label", waiting ? "Start background sound" : enabled ? "Turn background sound off" : "Turn background sound on");
     };
