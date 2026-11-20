@@ -29,7 +29,7 @@ The folders under `assets/` are intentionally grouped by purpose. Do not rename 
 
 Project stories and image references live in `assets/data/`. After changing those files, run `node scripts/build-project-pages.cjs` to regenerate the static project pages and sharing metadata. Commit the generated HTML alongside the data changes. Old `project.html?id=...` links redirect to the corresponding static page when JavaScript is enabled; without it the old page lists the projects.
 
-The sound control remembers the visitor’s background-ambience preference in browser storage across pages. Future Traces attempts to play its video with sound on arrival, independently of that preference; Bugsphere keeps its video sound separate too. Browsers that block audible autoplay show a play button instead.
+The sound control remembers the visitor’s background-ambience preference in browser storage across pages. Future Traces and Bugsphere attempt to play their videos with sound on arrival, independently of that preference. Browsers that block audible autoplay show a play button instead.
 
 ## Upload the complete site to GitHub
 

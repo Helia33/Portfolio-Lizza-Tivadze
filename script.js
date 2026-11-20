@@ -241,6 +241,7 @@ function renderBlock(id, block) {
         break;
     }
     case "video": {
+        const playOnArrival = id === "future-traces" || id === "bugsphere";
         section.classList.toggle("story-video--with-text", Boolean(block.text));
         const player = element("video", "story-video-player");
         player.dataset.src = block.src;
@@ -249,7 +250,7 @@ function renderBlock(id, block) {
         player.playsInline = true;
         player.muted = false;
         player.loop = true;
-        player.preload = id === "future-traces" ? "auto" : "none";
+        player.preload = playOnArrival ? "auto" : "none";
         if (block.poster) {
             player.poster = block.poster;
         }
@@ -282,7 +283,7 @@ function renderBlock(id, block) {
             loadVideo();
         };
         player.addEventListener("playing", () => {
-            if (id === "future-traces" || id === "bugsphere") {
+            if (playOnArrival) {
                 ambience.pause();
             }
             clearArrivalPrompt();
@@ -303,12 +304,12 @@ function renderBlock(id, block) {
                 status.textContent = error.name === "NotAllowedError"
                     ? "Your browser blocked autoplay with sound. Choose “Play video with sound” to start it."
                     : "The video could not start automatically. Choose “Play video with sound” to try again.";
-                if (id === "future-traces") {
+                if (playOnArrival) {
                     if (!arrivalPrompt) {
                         arrivalPrompt = element("div", "video-arrival-prompt");
                         const message = element("p", "", "");
                         message.setAttribute("role", "status");
-                        const start = element("button", "button", "Play Future Traces with sound");
+                        const start = element("button", "button", `Play ${window.STORIES[id].title} with sound`);
                         start.type = "button";
                         start.addEventListener("click", loadVideo);
                         arrivalPrompt.append(message, start);
@@ -328,7 +329,7 @@ function renderBlock(id, block) {
             loadVideo();
         });
         add(block.text ? element("p", "story-text", block.text) : null, media, caption(block.caption));
-        if (id === "future-traces") {
+        if (playOnArrival) {
             loadVideo();
         } else if ("IntersectionObserver" in window) {
             const videoObserver = new IntersectionObserver((entries) => {
@@ -867,7 +868,7 @@ const ambience = (() => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "sound-toggle";
-    button.hidden = project === "future-traces";
+    button.hidden = project === "future-traces" || project === "bugsphere";
     button.setAttribute("aria-pressed", "false");
     button.setAttribute("aria-label", "Turn sound on");
     button.innerHTML = '<span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Sound</span>';
