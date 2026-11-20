@@ -265,7 +265,7 @@ function renderBlock(id, block) {
         media.append(player, playButton, status);
 
         player.addEventListener("playing", () => {
-            if (id === "future-traces") {
+            if (id === "future-traces" || id === "bugsphere") {
                 ambience.pause();
             }
             playButton.hidden = true;
@@ -808,7 +808,15 @@ const ambience = (() => {
     const AudioContextClass = window.AudioContext || window.webkitAudioContext;
     const header = document.querySelector(".site-header");
     if (!AudioContextClass || !header) {
-        return { fadeOut() {} };
+        return { fadeOut() {}, pause() {} };
+    }
+
+    const preferenceKey = "helia-ambience-enabled";
+    let preference = null;
+    try {
+        preference = localStorage.getItem(preferenceKey);
+    } catch (error) {
+        console.warn("Could not read the sound preference.", error);
     }
 
     const button = document.createElement("button");
@@ -993,7 +1001,16 @@ const ambience = (() => {
     };
 
     button.addEventListener("click", () => {
-        setEnabled(!enabled || (context && context.state !== "running"));
+        const next = !enabled;
+        preference = next ? "true" : "false";
+        try {
+            localStorage.setItem(preferenceKey, preference);
+        } catch (error) {
+            console.warn("Could not save the sound preference.", error);
+        }
+        window.removeEventListener("pointerdown", resume);
+        window.removeEventListener("keydown", resume);
+        setEnabled(next);
     });
 
     // a faint note answers whenever the pointer finds a link
@@ -1016,9 +1033,10 @@ const ambience = (() => {
         }
         setEnabled(true);
     };
-    // the Bugsphere film carries its own sound, so the site ambience stays off there unless chosen
-    const silentPage = (document.body.dataset.project || new URLSearchParams(window.location.search).get("id")) === "bugsphere";
-    if (!silentPage) {
+    // These films carry their own sound, so ambience stays off unless chosen on the page.
+    const project = document.body.dataset.project || new URLSearchParams(window.location.search).get("id");
+    const silentPage = project === "bugsphere" || project === "future-traces";
+    if (!silentPage && preference !== "false") {
         setEnabled(true);
         window.addEventListener("pointerdown", resume);
         window.addEventListener("keydown", resume);

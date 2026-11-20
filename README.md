@@ -29,6 +29,8 @@ The folders under `assets/` are intentionally grouped by purpose. Do not rename 
 
 Project stories and image references live in `assets/data/`. After changing those files, run `node scripts/build-project-pages.cjs` to regenerate the static project pages and sharing metadata. Commit the generated HTML alongside the data changes. Old `project.html?id=...` links redirect to the corresponding static page when JavaScript is enabled; without it the old page lists the projects.
 
+The sound control remembers the visitor’s background-ambience preference in browser storage across pages. Bugsphere and Future Traces keep their video sound separate; browsers that block audible autoplay show a play button instead.
+
 ## Upload the complete site to GitHub
 
 This project contains more than 100 files, so use Git or GitHub Desktop rather than GitHub's browser uploader. The browser uploader has per-upload and per-file limits; the optimized video is also larger than its per-file limit.
