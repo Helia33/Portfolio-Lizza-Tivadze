@@ -4,7 +4,7 @@ window.STORIES = {
     "closet-memories": {
         number: "04",
         title: "A Closet of Memories",
-        discipline: "Mapping in a Closet of Memories",
+        discipline: "Mapping",
         year: "2025",
         tagline: "Three generations of women, mapped through a place, a picture, an object, a word and a food.",
         cover: "1-1",
@@ -62,7 +62,7 @@ window.STORIES = {
     zin: {
         number: "03",
         title: "ZIN",
-        discipline: "Architecture",
+        discipline: "Spatial pavilion",
         year: "2025",
         tagline: "A pavilion designed for Terneuzen, bringing stillness into the coastal landscape.",
         cover: "2-1",
@@ -87,7 +87,7 @@ window.STORIES = {
     "future-traces": {
         number: "05",
         title: "Future Traces",
-        discipline: "Sculpture & digital image",
+        discipline: "Sculpture & digital light study",
         year: "2025",
         tagline: "Future Traces extends my hand-sculpted terracotta icon into a digital space.",
         cover: "final-front",
@@ -126,6 +126,45 @@ window.STORIES = {
             { type: "paragraph", text: "The inscription identifies me as the maker while leaving a message for whoever might discover the work in the future." },
             { type: "paragraph", text: "I wanted to make an object that carries the concerns of its time into an uncertain future—something a new civilisation might discover long after its original context has disappeared." },
             { type: "video", text: "In the animation, the icon stands upright and radiates light. I wanted to see how light could change the sculpture’s presence and express its spiritual meaning.", src: "assets/works/future-traces-new-mary-optimized.mp4" }
+        ]
+    },
+    "bugsphere": {
+        number: "06",
+        title: "Bugsphere",
+        discipline: "Immersive film",
+        year: "Spring 2026",
+        tagline: "Follow the ladybug and the world turns bright. Look away, and the water begins to rise.",
+        cover: "film-frame-09",
+        fragments: ["ladybug", "pond", "sea"],
+        tone: "#6f8a63",
+        facts: [["Format", "Animation"], ["Medium", "3D animation, live footage, sound"], ["Length", "47 seconds"], ["Year", "Spring 2026"]],
+        blocks: [
+            { type: "lede", text: "Bugsphere is a short film about the choice between noticing hope and sinking into everything that weighs on us. A ladybug stands for the positive thinking of the people of Terneuzen. Following it opens a bright world. Turning away from it leads to the sea." },
+            { type: "video", src: "assets/works/bugsphere/bugsphere.mp4", poster: "assets/works/bugsphere/film-frame-09.png", caption: "Bugsphere, 47 seconds, with sound. Best watched full screen." },
+            { type: "text", heading: "Where it began", text: "While interviewing people in Terneuzen, I heard many things they did not like about the place. Alongside them I also heard small signs of hope that were easy to miss. The ladybug became a way to point at those signs, so that people might notice them." },
+                        { type: "text", heading: "The street", text: "The animation begins in the familiar city. The street is slightly out of focus, as if seen by someone who is not really looking, and everything feels grey and ordinary." },
+                        { type: "pair", images: ["film-frame-01", "film-frame-02"], caption: "Terneuzen at the start of the animation: a street we pass without noticing." },
+                        { type: "quote", text: "Hope is a direction." },
+                        { type: "text", heading: "The ladybug appears", text: "Then a small red shape appears in a roadside shrub. It hides among the leaves and opens its wings, inviting the viewer to follow." },
+                        { type: "trio", images: ["film-frame-09", "film-frame-07", "film-frame-08"], caption: "The ladybug in the shrub, hiding among the leaves, then opening its wings." },
+                        { type: "text", heading: "Following the ladybug", text: "Following it carries the viewer into a bright meadow of poppies, flowers and grass. The camera moves through branches and petals until the ladybug is found resting on a white flower." },
+                        { type: "pair", images: ["film-frame-11", "film-frame-12"], caption: "Passing through the branches into the meadow." },
+                        { type: "trio", images: ["film-frame-13", "film-frame-14", "film-frame-15"], caption: "The ladybug, found at last on a flower in the grass." },
+                        { type: "text", heading: "Looking away", text: "Losing sight of the ladybug carries the viewer into a dark and heavy sea. Both worlds are built from the same place, and what changes is where you choose to look. Rain gathers, and the waves begin to rise." },
+                        { type: "trio", images: ["film-frame-04", "film-frame-05", "film-frame-06"], caption: "Rain gathers, and the waves begin to rise." },
+                        { type: "text", heading: "The end", text: "In the original version the film ended on a black screen, as a way to say that the person had drowned. I kept that silence, but let the sound of the waves carry on and fade slowly while the last words appear." },
+                        { type: "pair", images: ["film-frame-03", "film-frame-10"], caption: "The sea moves from a distant horizon into darkness." },
+                        { type: "text", heading: "Making the film", text: "I worked from my original animation and re-edited it into a square fisheye, close to the feel of 360 footage. I slowed the key moments down, added short captions in Nyala, graded each world separately and kept the sound of the ladybug’s wings and the sea." },
+            { type: "text", heading: "Looking closer", text: "These photographs come from encounters with ladybugs in Terneuzen. I found them on leaves, among wild plants and even on the pavement. Each small red shell invited me to pause and look more closely at the life around me." },
+            { type: "trio", images: ["encounter-dandelion", "encounter-meadow", "encounter-pavement"], caption: "A ladybug among dandelions, in the grass, and crossing the pavement." },
+            { type: "trio", images: ["encounter-shrub", "encounter-pavement-close", "encounter-nettle"], caption: "Different places, the same bright visitor." },
+            { type: "trio", images: ["encounter-leaves", "encounter-leaf-close", "encounter-ladybugs-close"], caption: "Looking closer reveals more than one ladybug." },
+            { type: "full", image: "encounter-ladybugs", caption: "Three ladybugs gathered on a leaf." },
+            { type: "text", heading: "Finding the spheres", text: "The ceramic spheres are an allegory of the ladybugs I encountered outside. Their rounded forms recall the small insects, while their pale surfaces make them feel like quiet discoveries in the landscape. Finding a sphere tucked among plants echoes the moment of spotting a ladybug: you have to look closely, and the familiar world suddenly feels full of life and possibility. Opening one reveals a colorful, playful world inside." },
+            { type: "full", image: "ceramic-spheres", caption: "The ceramic spheres and other small vessels on display." },
+            { type: "text", heading: "From studies to setting", text: "The photographs move from workshop studies to the spheres placed outdoors. Set among leaves, soil and other everyday details, each one becomes something to discover—just like finding a ladybug in the real world." },
+            { type: "trio", images: ["study-spheres-overhead", "study-spheres-workshop", "sphere-in-garden"], caption: "From the first sphere studies to a quiet discovery among the garden plants." },
+            { type: "pair", images: ["sphere-palm-planter", "vessels-at-palm"], caption: "The spheres among the planting, waiting to be noticed." }
         ]
     },
     "wool-cups": {

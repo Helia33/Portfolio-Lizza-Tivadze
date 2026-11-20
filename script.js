@@ -61,7 +61,7 @@ if (menuToggle && siteNav) {
 
 /* ---------- The work: each project told as a story of photographs and words ---------- */
 
-const STORY_ORDER = ["wool-cups", "tklapi-lamp", "zin", "closet-memories", "future-traces"];
+const STORY_ORDER = ["wool-cups", "tklapi-lamp", "zin", "closet-memories", "future-traces", "bugsphere"];
 
 function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -78,6 +78,9 @@ function element(tag, className, text) {
 function photo(id, ref) {
     if (id === "future-traces" && window.FUTURE_TRACES_PHOTOS && window.FUTURE_TRACES_PHOTOS[ref]) {
         return window.FUTURE_TRACES_PHOTOS[ref];
+    }
+    if (id === "bugsphere" && window.BUGSPHERE_PHOTOS && window.BUGSPHERE_PHOTOS[ref]) {
+        return window.BUGSPHERE_PHOTOS[ref];
     }
     if (id === "closet-memories" && window.MAPPING_PHOTOS && window.MAPPING_PHOTOS[ref]) {
         return window.MAPPING_PHOTOS[ref];
@@ -250,7 +253,7 @@ function renderBlock(id, block) {
         if (block.poster) {
             player.poster = block.poster;
         }
-        player.setAttribute("aria-label", "Future Traces video study");
+        player.setAttribute("aria-label", id === "bugsphere" ? "Bugsphere film" : "Future Traces video study");
 
         const media = element("div", "story-video-media");
         const playButton = element("button", "button story-video-play", "Play video with sound");
@@ -403,8 +406,8 @@ function renderBlock(id, block) {
 
 const storyRoot = byId("story");
 
-if (storyRoot && window.STORIES && window.WORKS) {
-    const requested = new URLSearchParams(window.location.search).get("id");
+if (storyRoot && document.body.dataset.project && window.STORIES && window.WORKS) {
+    const requested = document.body.dataset.project || new URLSearchParams(window.location.search).get("id");
     const id = window.STORIES[requested] ? requested : STORY_ORDER[0];
     const story = window.STORIES[id];
     const position = STORY_ORDER.indexOf(id);
@@ -448,7 +451,7 @@ if (storyRoot && window.STORIES && window.WORKS) {
     const nextId = STORY_ORDER[(position + 1) % STORY_ORDER.length];
     const next = window.STORIES[nextId];
     const onward = element("a", "story-next");
-    onward.href = `project.html?id=${nextId}`;
+    onward.href = `${nextId}.html`;
     onward.dataset.travel = "";
     const nextImage = picture(nextId, next.cover, "next-image");
     if (nextImage) {
@@ -475,13 +478,14 @@ if (exhibition && window.STORIES && window.WORKS) {
     const indexList = document.querySelector(".index-list");
     if (indexList) {
         const previews = new Map([...indexList.querySelectorAll("a[href]")].map((link) => {
-            const id = new URL(link.href, window.location.href).searchParams.get("id");
+            const url = new URL(link.href, window.location.href);
+            const id = url.searchParams.get("id") || url.pathname.split("/").pop().replace(/\.html$/, "");
             return [id, { src: link.dataset.preview, fit: link.dataset.previewFit }];
         }));
         const rows = STORY_ORDER.map((id) => {
             const story = window.STORIES[id];
             const link = element("a", "index-row");
-            link.href = `project.html?id=${id}`;
+            link.href = `${id}.html`;
             link.dataset.travel = "";
             link.setAttribute("aria-label", `${story.title}: ${story.tagline}`);
             const preview = previews.get(id);
@@ -506,7 +510,7 @@ if (exhibition && window.STORIES && window.WORKS) {
         const room = element("article", `room ${i % 2 ? "is-flipped" : ""} reveal`.trim());
         room.style.setProperty("--tone", story.tone);
         const link = element("a", "room-link");
-        link.href = `project.html?id=${id}`;
+        link.href = `${id}.html`;
         link.dataset.travel = "";
         link.setAttribute("aria-label", `${story.title}: ${story.tagline}`);
 
@@ -570,6 +574,7 @@ if (document.querySelector("[data-view]")) {
     viewer.setAttribute("aria-label", "Photograph");
     viewer.hidden = true;
     const viewerImage = element("img", "viewer-image");
+    viewerImage.alt = "";
     const viewerCaption = element("p", "viewer-caption");
     const close = element("button", "viewer-close", "×");
     close.type = "button";
@@ -1011,9 +1016,13 @@ const ambience = (() => {
         }
         setEnabled(true);
     };
-    setEnabled(true);
-    window.addEventListener("pointerdown", resume);
-    window.addEventListener("keydown", resume);
+    // the Bugsphere film carries its own sound, so the site ambience stays off there unless chosen
+    const silentPage = (document.body.dataset.project || new URLSearchParams(window.location.search).get("id")) === "bugsphere";
+    if (!silentPage) {
+        setEnabled(true);
+        window.addEventListener("pointerdown", resume);
+        window.addEventListener("keydown", resume);
+    }
 
     return {
         fadeOut() {
@@ -1583,6 +1592,19 @@ if (explorable) {
         button.addEventListener("pointerup", release);
         button.addEventListener("pointercancel", release);
         button.addEventListener("lostpointercapture", release);
+        button.addEventListener("keydown", (event) => {
+            if (event.key === " " || event.key === "Enter") {
+                event.preventDefault();
+                pad[direction] = 1;
+                requestDraw();
+            }
+        });
+        button.addEventListener("keyup", (event) => {
+            if (event.key === " " || event.key === "Enter") {
+                release();
+            }
+        });
+        button.addEventListener("blur", release);
     });
 
     // wandering hides the words so only the landscape remains
@@ -2656,8 +2678,9 @@ function startWorld() {
     };
 
     // Keep the landscape crisp while leaving room for the performance probe to adapt on slower devices.
-    const qualityFloor = compact ? 0.72 : 0.82;
-    let quality = Math.max(qualityFloor, Math.min(window.devicePixelRatio || 1, 1.5) * (compact ? 0.8 : 1));
+    const lowPower = (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) || (navigator.deviceMemory && navigator.deviceMemory <= 4);
+    const qualityFloor = lowPower ? 0.55 : (compact ? 0.72 : 0.82);
+    let quality = Math.max(qualityFloor, Math.min(window.devicePixelRatio || 1, lowPower ? 0.75 : 1.5) * (compact ? 0.8 : 1));
     const veil = Number(document.body.dataset.veil || 0);
     const startTime = performance.now();
     let last = startTime;
@@ -2853,7 +2876,7 @@ function startWorld() {
     }
 
     requestDraw = () => {
-        if (!pending && !stopped) {
+        if (!pending && !stopped && !document.hidden) {
             pending = true;
             requestAnimationFrame(frame);
         }
@@ -2899,6 +2922,14 @@ function useFallback() {
     if (canvas) {
         canvas.hidden = true;
     }
+    const wander = byId("wander-toggle");
+    if (wander) {
+        wander.hidden = true;
+    }
+    const hud = document.querySelector(".explore-hud");
+    if (hud) {
+        hud.hidden = true;
+    }
     if (borjgali) {
         borjgali.style.left = "72%";
         borjgali.style.top = "22%";
@@ -2923,8 +2954,7 @@ if (!explorable || !gl) {
     // if the graphics card gives up, the live world quietly fades back to the still
     canvas.addEventListener("webglcontextlost", (event) => {
         event.preventDefault();
-        canvas.style.opacity = "0";
-        canvas.hidden = true;
+        useFallback();
     });
     window.setTimeout(() => {
         let started = false;

@@ -12,7 +12,7 @@ window.WORKS = {
                                               "Timeline: 2025",
                                               "We enter my grandmas WARDROBE.",
                                               "We entered My grandmas WARDROBE. Her name is Valjia. The wardrobe is 50 years old.",
-                                              "i collect all the buttons i get and store them in this bag. in the wardrobe.it is good to have this many."
+                                              "I collect all the buttons I get and store them in this bag. In the wardrobe. It is good to have this many."
                                           ],
                                 "cuts":  [
                                              {
