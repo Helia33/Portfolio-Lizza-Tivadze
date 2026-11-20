@@ -52,6 +52,11 @@ if (menuToggle && siteNav) {
 
     menuToggle.addEventListener("click", () => setMenu(menuToggle.getAttribute("aria-expanded") !== "true"));
     siteNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenu(false)));
+    document.addEventListener("click", (event) => {
+        if (!siteNav.contains(event.target) && !menuToggle.contains(event.target)) {
+            setMenu(false);
+        }
+    });
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
             setMenu(false);
@@ -869,15 +874,17 @@ const ambience = (() => {
     if (video) {
         const videoButton = document.createElement("button");
         videoButton.type = "button";
-        videoButton.className = "sound-toggle video-sound-toggle";
+        videoButton.className = "sound-toggle video-sound-toggle is-silent";
         videoButton.innerHTML = '<span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Video</span>';
         header.appendChild(videoButton);
         const syncVideoSound = () => {
             const audible = !video.muted && video.volume > 0;
             videoButton.setAttribute("aria-pressed", String(audible));
             videoButton.setAttribute("aria-label", audible ? "Mute video sound" : "Turn video sound on");
+            // grey until the video is actually playing with sound
+            videoButton.classList.toggle("is-silent", !(audible && !video.paused && !video.ended));
         };
-        video.addEventListener("volumechange", syncVideoSound);
+        ["volumechange", "play", "playing", "pause", "ended"].forEach((name) => video.addEventListener(name, syncVideoSound));
         videoButton.addEventListener("click", () => {
             if (video.muted || video.volume === 0) {
                 if (video.volume === 0) {
@@ -913,7 +920,7 @@ const ambience = (() => {
 
     const button = document.createElement("button");
     button.type = "button";
-    button.className = "sound-toggle ambience-toggle";
+    button.className = "sound-toggle ambience-toggle is-silent";
     button.setAttribute("aria-pressed", "false");
     button.setAttribute("aria-label", "Turn background sound on");
     button.innerHTML = '<span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Sound</span>';
@@ -1061,6 +1068,8 @@ const ambience = (() => {
     let videoPlaying = video && !video.paused && !video.ended;
     const syncSoundControl = () => {
         const waiting = enabled && !videoPlaying && context && context.state === "suspended";
+        // grey unless sound is really coming out: off, blocked by the browser, or paused for the video
+        button.classList.toggle("is-silent", !(enabled && !videoPlaying && context && context.state === "running"));
         button.setAttribute("aria-pressed", String(enabled));
         button.setAttribute("aria-label", waiting ? "Start background sound" : enabled ? "Turn background sound off" : "Turn background sound on");
     };
@@ -1546,9 +1555,9 @@ function updateLiquid(now, seconds) {
 const flowOffset = (x, z) => liquid.value * 0.55 * Math.sin(x * 0.35 + liquid.seconds * 1.3) * Math.sin(z * 0.3 - liquid.seconds * 1.1);
 const groundAt = (x, z) => Math.max(world.height(x, z) + flowOffset(x, z), WATER_LEVEL);
 
-/* ---------- Day and night: one slow day passes every eight minutes ---------- */
+/* ---------- Day and night: one slow day passes every six minutes ---------- */
 
-const DAY_LENGTH = 480;
+const DAY_LENGTH = 360;
 // the cycle carries across pages, so moving through the site never resets the light
 const cycleOrigin = (() => {
     const fresh = Date.now() - 0.06 * DAY_LENGTH * 1000;
