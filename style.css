@@ -1091,6 +1091,76 @@ html.no-webgl .borjgali {
     color: var(--rose-deep);
 }
 
+.work-other-practice {
+    padding-block: 60px 20px;
+    border-top: 1px solid var(--line);
+}
+
+.work-other-practice .page-lede {
+    margin-bottom: 24px;
+}
+
+.other-practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    align-items: start;
+    gap: clamp(16px, 2.4vw, 36px);
+    padding-bottom: clamp(80px, 12vh, 140px);
+}
+
+.other-practice-heading {
+    margin-bottom: 24px;
+}
+
+.other-practice-single {
+    max-width: 580px;
+}
+
+.other-practice-group-caption {
+    grid-column: 1 / -1;
+    margin-top: 0;
+}
+
+.other-practice-triptych {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(6px, 2.4vw, 36px);
+}
+
+.other-practice-series {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.other-practice-pairs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.other-practice-pairs .shot img {
+    aspect-ratio: 7 / 8;
+    object-fit: contain;
+}
+
+.other-practice-series .shot img {
+    aspect-ratio: 9 / 10;
+    object-fit: contain;
+}
+
+.other-practice-triptych .shot img {
+    aspect-ratio: 4 / 5;
+    object-fit: contain;
+}
+
+@media (max-width: 800px) {
+    .other-practice-series {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .other-practice-pairs {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ---------- Work ---------- */
 
 .work-index {
